@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:views="clr-namespace:BrokenListview.Views;"
+             x:Class="BrokenListview.Views.NotWorkingPage"
+             x:Name="NotWorking">
+    <ContentPage.Content>
+		<StackLayout>
+			<!--Remove RowHeight from the listview in ContentViewForListView and this will render or see it render in WorkingPage.xaml b/c it is not in a StackLayout-->
+			<views:ContentViewForListView/>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>
